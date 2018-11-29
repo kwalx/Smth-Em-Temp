@@ -45,7 +45,7 @@
 
     @media only screen and (min-device-width: 624px) {
       .table624 {
-      width: 624px !important;
+        width: 624px !important;
       }
     }
 
@@ -56,16 +56,26 @@
     @media only screen and (max-device-width: 624px),
     only screen and (max-width: 624px) {
       table[class="table624"] {
-      width: 100% !important;
+        width: 100% !important;
+      }
+
+      div[class="mob_item"],
+      td[class="mob_item"] {
+        max-width: 100% !important;
+      }
+
+      div[class="mob_hidden"],
+      td[class="mob_hidden"] {
+        display: none !important;
+      }
     }
 
-    table[class="mob_center"] {
-      text-align: center !important;
-    }
-
-    div[class="mob_hidden"],
-    td[class="mob_hidden"] {
-      display: none !important;
+    @media only screen and (max-device-width: 623px),
+    only screen and (max-width: 623px) {
+      table[class="mob_center"],
+      div[class="mob_center"],
+      td[class="mob_center"] {
+        text-align: center !important;
       }
     }
 
@@ -73,19 +83,17 @@
       display: none;
     }
 
-    @media only screen and (max-device-width: 624px),
-      only screen and (max-width: 624px) {
-      div[class="mob_item"],
-      td[class="mob_item"] {
-        max-width: 100% !important;
-      }
-    }
-
     @media only screen and (max-device-width: 555px),
       only screen and (max-width: 555px) {
       div[class="mob_hid"],
       td[class="mob_hid"] {
-      display: none !important;
+        display: none !important;
+      }
+
+      table[class="full_width"],
+      td[class="full_width"],
+      div[class="full_width"] {
+        width: 100% !important;
       }
     }
   </style>
@@ -114,7 +122,8 @@
                   </td>
               </tr><!-- Preheader END -->
 
-              <!-- Header -->
+              <!-- HEADER -->
+              <!-- header top -->
               <tr>
                 <td align="center" valign="top" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c8c9c9;">
                   <!--[if (gte mso 9)|(IE)]>
@@ -122,27 +131,47 @@
                   <![endif]-->
                   <div style="max-width: 624px;">
                     <table border="0" cellspacing="0" cellpadding="0" class="table624" width="100%" style="max-width: 624px; min-width: 320px;">
-
-                      <!-- header top -->
                       <!-- padding v -->
                       <tr>
                         <td align="center" valign="top" style="line-height: 10px;">
                           <div style="height: 10px; font-size: 8px;">&nbsp;</div>
                         </td>
                       </tr><!-- padding v end -->
-                      <tr>
-                        <td width="50%" align="left" valign="top" style="line-height: 13px;"><span style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #8c8b89; display: block;">Having trouble viewing this email?<a href="https://example.example" target="_blank" style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #1288bd; text-decoration: underline;">View it&nbsp;in&nbsp;your browser.</a></span></td>
-                        <td width="50%" align="right" valign="top"><span style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #8c8b89; display: block;"><a href="" target="_blank" style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #1288bd; text-decoration: none;"><img src="img/ico-arrow.png" width="3" height="5" border="0" alt="" style="vertical-align: middle; width: 3px; height: 5px; outline: none; border: 0px;" />&nbsp;Online Version</a><a href="" target="_blank" style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #1288bd; text-decoration: none;"><img src="img/ico-arrow.png" width="3" height="5" border="0" alt="" style="vertical-align: middle; width: 3px; height: 5px; outline: none; border: 0px;" />&nbsp;Forward to&nbsp;a&nbsp;Friend</a></span></td>
-                      </tr><!-- header top end -->
-                      <!-- padding v -->
-                      <tr>
-                        <td align="center" valign="top" style="line-height: 10px;">
-                          <div style="height: 10px; font-size: 8px;">&nbsp;</div>
-                        </td>
-                      </tr><!-- padding v end -->
-
-                      <!-- header bottom -->
-                      <tr></tr><!-- header bottom end -->
+                      <tr><td align="center" valign="top">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="624" border="0" cellpadding="0" cellspacing="0"><tr><td width="310" valign="middle"> 
+                        <![endif]-->
+                        <div style="display: inline-block; width: 310px; vertical-align: middle;">
+                          <table width="310" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                            <tr>
+                              <td class="mob_center" align="left" valign="middle"><span style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #8c8b89; display: block;">Having trouble viewing this email?&nbsp;<a href="https://example.example" target="_blank" style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #1288bd; text-decoration: underline;">View it&nbsp;in&nbsp;your browser.</a></span></td>
+                            </tr>
+                            <!-- padding v -->
+                            <tr>
+                              <td align="center" valign="top" style="line-height: 10px;">
+                                <div style="height: 10px; font-size: 8px;">&nbsp;</div>
+                              </td>
+                            </tr><!-- padding v end -->
+                          </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]></td><td width="310" valign="middle"><![endif]-->
+                        <div style="display: inline-block; width: 310px; vertical-align: middle;">
+                          <table width="310" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                            <tr>
+                              <td class="mob_center" align="right" valign="middle" style="line-height: 13px;"><span style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #8c8b89; display: block;"><a href="https://example.example" target="_blank" style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #1288bd; text-decoration: none; vertical-align: middle;"><img src="img/ico-arrow.png" width="3" height="5" border="0" alt="" style="vertical-align: middle; width: 3px; height: 5px; outline: none; border: 0px;" />&nbsp;Online Version</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://example.example" target="_blank" style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; font-style: normal; color: #1288bd; text-decoration: none; vertical-align: middle;"><img src="img/ico-arrow.png" width="3" height="5" border="0" alt="" style="vertical-align: middle; width: 3px; height: 5px; outline: none; border: 0px;" />&nbsp;Forward to&nbsp;a&nbsp;Friend</a></span></td>
+                            </tr>
+                            <!-- padding v -->
+                            <tr>
+                              <td align="center" valign="top" style="line-height: 10px;">
+                                <div style="height: 10px; font-size: 8px;">&nbsp;</div>
+                              </td>
+                            </tr><!-- padding v end -->
+                          </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td></tr></table> 
+                        <![endif]-->
+                      </td></tr>
                     </table>
                   </div>
                   <!--[if (gte mso 9)|(IE)]>
@@ -151,10 +180,49 @@
                 <![endif]-->
 
                 </td>
-              </tr>
-              <!-- Header END -->
+              </tr><!-- header top end -->
 
-              <!--Main -->
+              <!-- header bottom -->
+              <!-- padding v -->
+              <tr>
+                <td align="center" valign="top" style="line-height: 60px;">
+                  <div style="width: 100%; height: 60px; font-size: 58px;">&nbsp;</div>
+                </td>
+              </tr><!-- padding v end -->
+              <tr>
+                <td align="center" valign="top">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="624" border="0" cellspacing="0" cellpadding="0"><tr><td>
+                  <![endif]-->
+                  <div style="max-width: 624px;">
+                    <table border="0" cellspacing="0" cellpadding="0" class="table624" width="100%" style="max-width: 624px; min-width: 320px;">
+                      <tr>
+                        <td align="left" valign="top" style="line-height: 42px;"><strong style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 40px; font-weight: normal; font-style: normal; color: #0d7eb4; display: block;"><a href="https://example.example" target="_blank" style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 33px; font-weight: normal; font-style: normal; color: #0d7eb4; text-decoration: none; display: block;"><img src="img/img-logo.png" width="142" height="49" border="0" alt="AppMail" style="display: block; outline: 0px; border: 0px;" /></a></strong></td>
+                        <td align="right" valign="middle">
+                          <table class="full_width" width="50%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td align="center" valign="middle" style="border-width: 1px; border-style: solid; border-color: #bababb; -webkit-border-top-right-radius: 5px; -moz-border-radius-topright: 5px; border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-left-radius: 5px; -webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; border-top-left-radius: 5px; line-height: 18px;"><div style="height: 10px; font-size: 8px;">&nbsp;</div><span style="line-height: 18px;"><img src="img/ico-header-calendar.png" width="18" height="18px" alt="" style="vertical-align: middle; border: 0px; outline: 0px;" /></span>&nbsp;&nbsp;<span style="font-family: 'Arial MT', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #8c8b89; vertical-align: middle;">June 2013</span><div style="height: 10px; font-size: 8px;">&nbsp;</div></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                </td></tr>
+                </table>
+                <![endif]-->
+                </td>
+              </tr><!-- header bottom end -->
+              <!-- padding v -->
+              <tr>
+                <td align="center" valign="top" style="line-height: 23px;">
+                  <div style="width: 100%; height: 23px; font-size: 21px;">&nbsp;</div>
+                </td>
+              </tr><!-- padding v end -->
+              <!-- HEADER END -->
+
+              <!-- MAIN -->
               <tr>
                 <td align="center" valign="top">
                   <!--[if (gte mso 9)|(IE)]>
@@ -163,7 +231,52 @@
                   <div style="max-width: 624px;">
                     <table border="0" cellspacing="0" cellpadding="0" class="table624" width="100%" style="max-width: 624px; min-width: 320px;">
 
-                      MAIN content
+                      <!-- Banner -->
+                      <!-- GRADIENT SECTION -->
+                      <tr>
+                        <td width="100%" align="center" valign="top" bgcolor="#fefefe" style="background:linear-gradient(0deg, #ebebeb 0%, #fefefe 100%); padding: 0; margin: 0; -webkit-border-top-right-radius: 10px; -moz-border-radius-topright: 10px; border-top-right-radius: 10px; -webkit-border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; border-top-left-radius: 10px;">
+                        <center>
+                        <!--[if gte mso 1]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000" fillcolor="#ebebeb">
+                        <v:fill type="gradient" color2="#fefefe"/>
+                        <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                        <center>
+                        <![endif]-->
+                          
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin: 0; padding: 0; width: 100%">
+                            <!-- banner heading -->
+                            <!-- padding v -->
+                            <tr>
+                              <td align="center" valign="top" style="line-height: 35px;">
+                                <div style="width: 100%; height: 35px; font-size: 33px;">&nbsp;</div>
+                              </td>
+                            </tr><!-- padding v end -->
+                            <tr>
+                              <td align="center" valign="top" style="line-height: 44px;"><span style="font-family: 'Mission-Script', Arial, Helvetica, sans-serif; font-size: 42px; font-weight: normal; font-style: italic; color: #656565; display: block;">Creative Mobile Applications</span></td>
+                            </tr><!-- banner heading end -->
+                            <!-- padding v -->
+                            <tr>
+                              <td align="center" valign="top" style="line-height: 33px;">
+                                <div style="width: 100%; height: 33px; font-size: 31px;">&nbsp;</div>
+                              </td>
+                            </tr><!-- padding v end -->
+                            <tr>
+                              <td align="center" valign="top">
+                                <img src="img/img-banner.png" width="522" border="0" alt="" style="display: block; width: 96%; max-width: 522px;">
+                              </td>
+                            </tr>
+                          </table>
+                          
+                        <!--[if gte mso 9]>
+                        </center>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                        </center>
+                        </td>
+                      </tr>
+                      <!-- GRADIENT SECTION - ENDS-->
+                      <!-- Banner End -->
                     </table>
                   </div>
                   <!--[if (gte mso 9)|(IE)]>
@@ -173,7 +286,7 @@
 
                 </td>
               </tr>
-              <!--Main END-->
+              <!-- MAIN END-->
 
               <!--Footer -->
               <tr>
